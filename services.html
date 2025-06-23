@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Услуги груминга | Никаких облаков - профессиональный уход за питомцами</title>
+    <meta name="description" content="Полный спектр профессиональных услуг груминга для собак и кошек. Стрижки, вычесывание, спа-процедуры, подстригание когтей и другие услуги по уходу.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Мобильное меню -->
+    <button class="mobile-menu-btn" aria-label="Открыть меню" aria-expanded="false">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link"><h1 class="logo">Никаких облаков</h1></a>
+            <nav class="navbar" aria-label="Основное меню">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="novosti.html" class="nav-link">Новости</a></li>
+                    <li><a href="shop.html" class="nav-link">Магазин</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <p><i class="fas fa-clock" aria-hidden="true"></i> Ежедневно с 10:00 до 20:00</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+79228922947">+7 922 892 29 47</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой секция -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title animate-fade-up">Наши услуги</h1>
+            </div>
+            <div class="hero-wave"><p class="page-subtitle animate-fade-up animate-delay-100">Профессиональный уход для ваших питомцев</p></div>
+        </section>
+
+        <!-- Хлебные крошки -->
+        <nav class="breadcrumbs container" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a> <span>/ Услуги</span>
+        </nav>
+
+        <!-- Секция услуг -->
+        <section class="services-section" aria-label="Наши услуги">
+            <div class="container">
+                <div class="services-intro">
+                    <h2>Комплексный подход к уходу за вашим питомцем</h2>
+                    <p>Мы предлагаем полный спектр профессиональных услуг груминга, чтобы ваш питомец выглядел и чувствовал себя прекрасно</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Стрижка -->
+                    <article class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Стрижка</h3>
+                        <p>Профессиональная стрижка с учетом породных особенностей и ваших пожеланий</p>
+                        <div class="price-options">
+                            <button class="price-link" data-service="Стрижка крупных животных" data-price="2 499р">Крупные животные <span>2 499р</span></button>
+                            <button class="price-link" data-service="Стрижка средних животных" data-price="2 899р">Средние животные <span>2 899р</span></button>
+                            <button class="price-link" data-service="Стрижка маленьких животных" data-price="3 299р">Маленькие животные <span>3 299р</span></button>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Вычесывание -->
+                    <article class="service-card animate-fade-up animate-delay-100">
+                        <div class="service-icon">
+                            <i class="fas fa-brush"></i>
+                        </div>
+                        <h3>Вычесывание</h3>
+                        <p>Тщательное вычесывание с использованием профессиональных инструментов</p>
+                        <div class="price-options">
+                            <button class="price-link" data-service="Вычесывание крупных животных" data-price="1 799р">Крупные животные <span>1 799р</span></button>
+                            <button class="price-link" data-service="Вычесывание средних животных" data-price="2 299р">Средние животные <span>2 299р</span></button>
+                            <button class="price-link" data-service="Вычесывание маленьких животных" data-price="2 599р">Маленькие животные <span>2 599р</span></button>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Подстригание когтей -->
+                    <article class="service-card animate-fade-up animate-delay-200">
+                        <div class="service-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3>Подстригание когтей</h3>
+                        <p>Аккуратное и безболезненное подстригание когтей с обработкой</p>
+                         <br></br>   
+                        <div class="price-options">
+                            <button class="price-link" data-service="Подстригание когтей кошкам" data-price="999р">Кошки <span>999р</span></button>
+                            <button class="price-link" data-service="Подстригание когтей собакам" data-price="1 399р">Собаки <span>1 399р</span></button>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Экспресс-линька -->
+                    <article class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3>Экспресс-линька</h3>
+                        <p>Специальная обработка для быстрого удаления линяющей шерсти</p>
+                        <div class="price-options">
+                            <button class="price-link" data-service="Экспресс-линька для кошек" data-price="3 499р">Кошки <span>3 499р</span></button>
+                            <button class="price-link" data-service="Экспресс-линька для собак" data-price="4 499р">Собаки <span>4 499р</span></button>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Спа-процедуры -->
+                    <article class="service-card animate-fade-up animate-delay-100">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Спа-процедуры</h3>
+                        <p>Расслабляющие процедуры с использованием натуральных средств</p>
+                        <div class="price-options">
+                            <button class="price-link" data-service="Спа-процедуры для кошек" data-price="1 399р">Кошки <span>1 399р</span></button>
+                            <button class="price-link" data-service="Спа-процедуры для собак" data-price="2 399р">Собаки <span>2 399р</span></button>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Дрессировка трюкам -->
+                    <article class="service-card animate-fade-up animate-delay-200">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Дрессировка трюкам</h3>
+                        <p>Обучение трюкам с использованием положительного подкрепления</p>
+                        <div class="price-options">
+                            <button class="price-link" data-service="Дрессировка кошек" data-price="2 999р">Кошки <span>2 999р</span></button>
+                            <button class="price-link" data-service="Дрессировка собак" data-price="3 999р">Собаки <span>3 999р</span></button>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Персональный стилист -->
+                    <article class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Персональный стилист</h3>
+                        <p>Индивидуальный подбор стиля и ухода для вашего питомца</p>
+                        <div class="price-options">
+                            <button class="price-link" data-service="Персональный стилист" data-price="6 799р">Индивидуальная услуга <span>6 799р</span></button>
+                        </div>
+                    
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с изображением -->
+        <section class="services-image-section" aria-label="Пример работы">
+            <div class="container">
+                <img src="pic/6.png" alt="Грумер ухаживает за собакой в нашем салоне" class="animate-scale" loading="lazy">
+                <div class="image-caption">
+                    <h3>Профессиональный подход к каждому питомцу</h3>
+                    <p>Наши специалисты имеют многолетний опыт работы с различными породами</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция преимуществ -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Профессионализм</h3>
+                        <p>Все наши грумеры имеют сертификаты и регулярно проходят обучение</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Забота</h3>
+                        <p>Мы используем только безопасные и гипоаллергенные средства</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Экономия времени</h3>
+                        <p>Быстрая и качественная обработка без стресса для питомца</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-home"></i>
+                        <h3>Удобство</h3>
+                        <p>Возможность ожидания в комфортной зоне или онлайн-запись</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<br></br>
+        <!-- CTA секция -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="section-title animate-fade-in">Готовы записаться?</h2>
+                <p class="animate-fade-up">Оставьте заявку и мы подберем удобное время для визита</p>
+                <div class="cta-buttons">
+                    <a href="sign_up.html" class="btn btn-primary signup-button">Записаться онлайн</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<br></br>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Никаких облаков</h3>
+                    <p>Профессиональный груминг для ваших питомцев</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:likaorenburg@gmail.com">likaorenburg@gmail.com</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+79228922947">+7 922 892-29-47</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Навигация</h4>
+                        <p><a href="index.html" >Главная</a></p>
+                        <p><a href="about.html" >О нас</a></p>
+                        <p><a href="novosti.html" >Новости</a></p>
+                        <p><a href="shop.html" >Магазин</a></p>
+                        <p><a href="services.html" >Услуги</a></p>
+                        <p><a href="reviews.html" >Отзывы</a></p>
+                        <p><a href="contacts.html" >Контакты</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/lika.llk?igsh=MXBvd2c1MWhpaTl4cw==&utm_source=ig_contact_invite" aria-label="Инстаграм"><i class="fab fa-instagram"></i></a>
+                        <a href="https://vk.com/likallk" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/likallk" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/79228922947" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 «Никаких облаков». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="back-to-top" title="Наверх" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Модальное окно для услуг -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalServiceTitle"></h3>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalServiceImage" src="" alt="">
+                </div>
+                <div class="modal-text">
+                    <p id="modalServiceDescription"></p>
+                    <div class="modal-price">
+                        <span id="modalServicePrice"></span>
+                        <a href="sign_up.html" class="btn btn-primary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelector('.loader').style.display = 'none';
+        });
+
+        // Обработка кликов по услугам
+        document.querySelectorAll('.price-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const serviceName = this.getAttribute('data-service');
+                const servicePrice = this.getAttribute('data-price');
+                
+                document.getElementById('modalServiceTitle').textContent = serviceName;
+                document.getElementById('modalServicePrice').textContent = servicePrice;
+                document.getElementById('modalServiceDescription').textContent = this.closest('.service-card').querySelector('p').textContent;
+                
+                // Здесь можно добавить логику для подстановки соответствующего изображения
+                document.getElementById('serviceModal').style.display = 'block';
+            });
+        });
+
+        // Закрытие модального окна
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('serviceModal').style.display = 'none';
+        });
+
+        // Закрытие при клике вне окна
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('serviceModal')) {
+                document.getElementById('serviceModal').style.display = 'none';
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

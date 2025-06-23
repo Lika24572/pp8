@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Новости груминг-салона "Никаких облаков" | Акции и события</title>
+    <meta name="description" content="Последние новости и акции груминг-салона 'Никаких облаков'. Будьте в курсе новых поступлений, специальных предложений и мероприятий.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu-btn" aria-label="Открыть меню">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link"><h1 class="logo">Никаких облаков</h1></a>
+            <nav class="navbar" aria-label="Основное меню">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="shop.html" class="nav-link">Магазин</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="novosti.html" class="nav-link active">Новости</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <p><i class="fas fa-clock" aria-hidden="true"></i> Ежедневно с 10:00 до 20:00</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+79228922947">+7 922 892 29 47</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой секция -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title animate-fade-up">Новости и акции</h1>
+            </div>
+            <div class="hero-wave"><p class="page-subtitle animate-fade-up animate-delay-100">Будьте в курсе последних событий и специальных предложений</p></div>
+        </section>
+
+        <!-- Хлебные крошки -->
+        <nav class="breadcrumbs container" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a> <span>/ Новости</span>
+        </nav>
+
+        <div class="news-sorting container">
+            <label for="sort-news">Сортировать:</label>
+            <select id="sort-news" class="sort-select" aria-label="Сортировка новостей">
+                <option value="desc">По убыванию (новые сначала)</option>
+                <option value="asc">По возрастанию (старые сначала)</option>
+            </select>
+        </div>
+
+        <!-- Основной контент -->
+        <section class="news-section" aria-label="Новости салона">
+            <div class="container">
+                <div class="news-grid">
+                    <!-- Новость 1 -->
+                    <article class="news-card animate-fade-up">
+                        <div class="news-image">
+                            <img src="pic/14.jpg" alt="Профессиональные средства для груминга на полках магазина" loading="lazy">
+                            <div class="news-date">
+                                <span class="day">15</span>
+                                <span class="month">Июня</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Новое поступление товаров для груминга</h3>
+                            <p>Мы рады сообщить о поступлении новой партии профессиональных средств по уходу за шерстью от ведущих мировых производителей. Теперь в нашем ассортименте еще больше вариантов для ваших питомцев!</p>
+                            <a href="shop.html" class="news-link">Посмотреть товары →</a>
+                        </div>
+                    </article>
+
+                    <!-- Новость 2 -->
+                    <article class="news-card animate-fade-up animate-delay-100">
+                        <div class="news-image">
+                            <img src="pic/15.jpg" alt="Собака после летней стрижки" loading="lazy">
+                            <div class="news-date">
+                                <span class="day">01</span>
+                                <span class="month">Июня</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Летняя акция "Освежающая стрижка"</h3>
+                            <p>С 1 по 30 июня скидка 20% на все виды стрижек для собак. Позаботьтесь о комфорте вашего питомца в жаркую погоду с нашей профессиональной помощью!</p>
+                            <a href="sign_up.html" class="news-link">Записаться на стрижку →</a>
+                        </div>
+                    </article>
+
+                    <!-- Новость 3 -->
+                    <article class="news-card animate-fade-up animate-delay-200">
+                        <div class="news-image">
+                            <img src="pic/16.jpg" alt="Мастер-класс по уходу за питомцем" loading="lazy">
+                            <div class="news-date">
+                                <span class="day">25</span>
+                                <span class="month">Май</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Мастер-класс по домашнему уходу за питомцем</h3>
+                            <p>Приглашаем всех желающих на бесплатный мастер-класс по основам домашнего ухода за шерстью, когтями и ушами вашего питомца. Регистрация обязательна.</p>
+                            <a href="#registration-form" class="news-link">Зарегистрироваться →</a>
+                        </div>
+                    </article>
+
+                    <!-- Новость 4 -->
+                    <article class="news-card animate-fade-up">
+                        <div class="news-image">
+                            <img src="pic/17.jpg" alt="Новый грумер Анна за работой" loading="lazy">
+                            <div class="news-date">
+                                <span class="day">10</span>
+                                <span class="month">Май</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h3>В нашу команду вступил новый профессиональный грумер</h3>
+                            <p>Мы рады представить нашего нового специалиста - Анну, которая имеет 5-летний опыт работы с различными породами собак и кошек. Теперь у нас еще больше возможностей для качественного ухода за вашими питомцами!</p>
+                            <a href="services.html" class="news-link">Наши услуги →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма регистрации на мастер-класс -->
+        <section id="registration-form" class="registration-section container" style="display: none;">
+            <h2>Регистрация на мастер-класс</h2>
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="pet">Питомец (порода, возраст)</label>
+                    <input type="text" id="pet" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </section>
+
+        <!-- CTA секция -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="section-title animate-fade-in">Подписаться на новости</h2>
+                <p class="animate-fade-up">Получайте первыми информацию об акциях и новых услугах</p>
+                <form class="subscribe-form animate-fade-up animate-delay-100">
+                    <input type="email" placeholder="Ваш email" required aria-label="Ваш email">
+                    <button type="submit" class="btn btn-primary">Подписаться</button>
+                </form>
+                <br></br>
+                <div class="cta-buttons">
+                    <a href="sign_up.html" class="btn btn-primary signup-button">Записаться онлайн</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<br></br>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Никаких облаков</h3>
+                    <p>Профессиональный груминг для ваших питомцев</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:likaorenburg@gmail.com">likaorenburg@gmail.com</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+79228922947">+7 922 892-29-47</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Навигация</h4>
+                        <p><a href="index.html" >Главная</a></p>
+                        <p><a href="about.html" >О нас</a></p>
+                        <p><a href="novosti.html" >Новости</a></p>
+                        <p><a href="shop.html" >Магазин</a></p>
+                        <p><a href="services.html" >Услуги</a></p>
+                        <p><a href="reviews.html" >Отзывы</a></p>
+                        <p><a href="contacts.html" >Контакты</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/lika.llk?igsh=MXBvd2c1MWhpaTl4cw==&utm_source=ig_contact_invite" aria-label="Инстаграм"><i class="fab fa-instagram"></i></a>
+                        <a href="https://vk.com/likallk" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/likallk" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/79228922947" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 «Никаких облаков». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="back-to-top" title="Наверх" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelector('.loader').style.display = 'none';
+        });
+
+        // Сортировка новостей
+        document.getElementById('sort-news').addEventListener('change', function() {
+            const newsGrid = document.querySelector('.news-grid');
+            const newsCards = Array.from(document.querySelectorAll('.news-card'));
+            
+            newsCards.reverse(); // Простое изменение порядка для демонстрации
+            
+            newsGrid.innerHTML = '';
+            newsCards.forEach(card => newsGrid.appendChild(card));
+        });
+
+        // Показ формы регистрации при клике на ссылку
+        document.querySelectorAll('.news-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#registration-form') {
+                    e.preventDefault();
+                    document.getElementById('registration-form').style.display = 'block';
+                    window.scrollTo({
+                        top: document.getElementById('registration-form').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

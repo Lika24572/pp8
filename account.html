@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Новостная лента | Никаких облаков</title>
+    <meta name="description" content="Последние новости и события нашего груминг-салона. Акции, мероприятия и полезные статьи.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu-btn">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Никаких облаков</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="novosti.html" class="nav-link">Новости</a></li>
+                    <li><a href="shop.html" class="nav-link">Магазин</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <p><i class="fas fa-clock"></i> Ежедневно с 10:00 до 20:00</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+79228922947">+7 922 892 29 47</a></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title animate-fade-up">Личный кабинет</h1>
+        </div>
+        <div class="hero-wave"><p class="page-subtitle animate-fade-up animate-delay-100">Управляйте своими записями и покупками</p></div>
+    </section>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs container">
+        <a href="index.html">Главная</a> <span>/ Личный кабинет</span>
+    </div>
+
+    <!-- Основной контент -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-tabs">
+                <button class="tab-btn active" data-tab="profile">Профиль</button>
+                <button class="tab-btn" data-tab="orders">Мои заказы</button>
+                <button class="tab-btn" data-tab="appointments">Мои записи</button>
+            </div>
+
+            <!-- В разделе профиля -->
+<div class="tab-content active" id="profile">
+    <div class="profile-info">
+        <div class="profile-avatar">
+            <img id="userAvatar" src="pic/18.jpg" alt="Аватар пользователя" loading="lazy">
+            <form id="avatarForm" enctype="multipart/form-data">
+                <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                <button type="button" class="btn btn-secondary" id="changeAvatarBtn">Изменить фото</button>
+            </form>
+        </div>
+        <div class="profile-details">
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="userName">Имя</label>
+                    <input type="text" id="userName" value="Максим Петров" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" value="maxpetrov@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPhone">Телефон</label>
+                    <input type="tel" id="userPhone" value="+7 900 123-45-67" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+            <div class="tab-content" id="orders">
+                <h3>История заказов</h3>
+                <div class="order-history">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-date">15.06.2025</span>
+                            <span class="order-status completed">Завершен</span>
+                            <span class="order-total">4 998 ₽</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Шампунь для собак (2 шт.) - 998 ₽</p>
+                            <p>Лежанка "Уютный Домик" - 2 499 ₽</p>
+                            <p>Щетка "Блеск" - 999 ₽</p>
+                            <p>Доставка - 500 ₽</p>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-date">10.05.2025</span>
+                            <span class="order-status completed">Завершен</span>
+                            <span class="order-total">1 299 ₽</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Амуниция для кошек - 1 299 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="appointments">
+                <h3>Ближайшие записи</h3>
+                <div class="appointment-list">
+                    <div class="appointment-card">
+                        <div class="appointment-date">
+                            <span class="day">25</span>
+                            <span class="month">Июня</span>
+                            <span class="time">15:00</span>
+                        </div>
+                        <div class="appointment-details">
+                            <h4>Стрижка средней собаки</h4>
+                            <p>Питомец: Бобик</p>
+                            <p>Мастер: Аня</p>
+                            <p>Стоимость: 2 899 ₽</p>
+                        </div>
+                        <button class="btn btn-secondary">Отменить</button>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-date">
+                            <span class="day">30</span>
+                            <span class="month">Июня</span>
+                            <span class="time">11:00</span>
+                        </div>
+                        <div class="appointment-details">
+                            <h4>Спа-процедуры для кошки</h4>
+                            <p>Питомец: Мурка</p>
+                            <p>Мастер: Оля</p>
+                            <p>Стоимость: 1 399 ₽</p>
+                        </div>
+                        <button class="btn btn-secondary">Отменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (как в других файлах) -->
+
+    <script>
+        // Табы в личном кабинете
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Удаляем активный класс у всех кнопок и контента
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Добавляем активный класс к выбранной кнопке и соответствующему контенту
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Сохранение данных в localStorage при изменении профиля
+        document.querySelector('#profile .btn-primary').addEventListener('click', function() {
+            // Здесь будет код для обновления данных профиля
+            alert('Функция изменения данных будет реализована позже');
+        });
+    </script>
+
+<div class="loader">
+    <div class="loader-spinner"></div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('.loader').style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
